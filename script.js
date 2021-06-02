@@ -1,5 +1,6 @@
-function startTimer(duration, display) {
+function startTimer(duration, display,dt) {
     var timer = duration, minutes, seconds;
+    dt= new Date();
     setInterval(function () {
         minutes = parseInt(timer / 60, 10);
         seconds = parseInt(timer % 60, 10);
@@ -12,8 +13,9 @@ function startTimer(duration, display) {
     }, 1000);
 }
 window.onload = function () {
-    var duration = 60 * 5; // Converter para segundos
-        display = document.querySelector('#timer'); // selecionando o timer
+    var duration = 60 * 24; // Converter para segundos
+        display =  document.querySelector('#timer'); // selecionando o timer
+        document.getElementById('#tst').innerHTML= data.getFullYear() ;
     startTimer(duration, display); // iniciando o timer
 };
 
