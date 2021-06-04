@@ -15,7 +15,7 @@ function startTimer(duration, display,dt) {
 window.onload = function () {
     var duration = 60 * 24; // Converter para segundos
         display =  document.querySelector('#timer'); // selecionando o timer
-        document.getElementById('#tst').innerHTML= data.getFullYear() ;
+        
     startTimer(duration, display); // iniciando o timer
 };
 
