@@ -1,4 +1,4 @@
-function startTimer(duration, display,dt) {
+/* function startTimer(duration, display,dt) {
     var timer = duration, minutes, seconds;
     dt= new Date();
     setInterval(function () {
@@ -17,5 +17,7 @@ window.onload = function () {
         display =  document.querySelector('#timer'); // selecionando o timer
         
     startTimer(duration, display); // iniciando o timer
-};
+}; */
+var idade = 30;
+alert('Idade '+ idade);
 
